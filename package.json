@@ -1,0 +1,17 @@
+{
+  "name": "mern-task-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "wait-on": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "wait-on": "^8.0.1"
+  }
+}
