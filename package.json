@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "concurrently": "^6.0.0",
+    "react-scroll": "^1.9.0",
     "wait-on": "^5.2.0"
   },
   "devDependencies": {

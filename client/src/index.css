@@ -5,3 +5,27 @@
 * {
     scroll-behavior: smooth;
 }
+
+.link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: transparent; /* Change this to the desired color */
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    transform: scaleX(0); /* Start with scale 0 for animation */
+    transform-origin: right; /* The line will grow from the right */
+  }
+  
+  .link:hover::after {
+    background-color: currentColor; /* Use the text color */
+    transform: scaleX(1); /* Scale to 1 on hover */
+    transform-origin: center; /* The line will grow to full width from the left */
+  }
