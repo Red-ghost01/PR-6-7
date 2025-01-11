@@ -1,31 +1,41 @@
 import React from 'react';
+import { FaCompass } from 'react-icons/fa';
 import sampleVideo from '../assets/images/desktop_Hero.mp4';
 
-const VideoPlayer = () => {
+const Home = () => {
   return (
-    <div className="relative md:w-full h-min">
-
+    <div className="relative w-full h-screen">
       <video
-        width="100%"
-        height="auto"
-        className="absolute video-player opacity-90"
+        className="absolute top-0 left-0 object-cover w-full h-full opacity-90"
         preload="metadata"
-        loop={true} // set to true if you want it to loop
+        loop
         aria-label="Sample Video"
-        autoplay // Add autoplay attribute
-        muted // Mute the video to allow autoplay
-        playsInline // Add playsInline attribute
+        autoPlay
+        muted
+        playsInline
       >
         <source src={sampleVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className='absolute top-[50%] left-[140px] right-[650px]'>
-        <p className='text-6xl font-bold text-white'>Your Parter In Remote And Office</p>
-        <div className='flex mt-1 text-[20px] text-white' style={{ whiteSpace: 'nowrap' }}><p>- Harness the power of data to build experiences and technologies that work smarter, drive result, and fuel innovation.</p>
+      <div className="absolute md:top-[30%] md:left-[10%] md:right-[55%]">
+        <p className="text-6xl font-bold text-white">Your Partner In Remote And Office</p>
+        <div className="flex mt-1 text-[20px] text-white items-center">
+          <span className="mr-2">-</span>
+          <p>
+            Harness the power of data to build experiences and technologies that work smarter, drive results, and fuel innovation.
+          </p>
         </div>
+        <div className="flex items-center mt-[46px] w-[196px] h-[50px] bg-[#F49F0A] rounded">
+          <button className='flex items-center justify-center w-[70%] h-full text-black bg-transparent focus:outline-none' aria-label="Get in touch">
+            Get in touch
+          </button>
+          <div className='flex justify-center items-center w-[30%] h-full bg-[#EB9400] rounded'>
+            <FaCompass className='text-black' />
+          </div>
         </div>
+      </div>
     </div>
   );
 };
 
-export default VideoPlayer;
+export default Home;
