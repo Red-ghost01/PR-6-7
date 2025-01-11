@@ -17,8 +17,8 @@ const Home = () => {
         <source src={sampleVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute md:top-[30%] md:left-[10%] md:right-[55%]">
-        <p className="text-6xl font-bold text-white">Your Partner In Remote And Office</p>
+      <div className="absolute top-[30%] left-[10%] right-[55%]">
+        <p className="text-3xl font-bold text-white md:text-6xl">Your Partner In Remote And Office</p>
         <div className="flex mt-1 text-[20px] text-white items-center">
           <span className="mr-2">-</span>
           <p>
