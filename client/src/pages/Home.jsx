@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaCompass } from 'react-icons/fa';
 import sampleVideo from '../assets/images/desktop_Hero.mp4';
 

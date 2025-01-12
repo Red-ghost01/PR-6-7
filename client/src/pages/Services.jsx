@@ -195,7 +195,6 @@ const Services = () => {
                                     <p className="mb-4 text-sm text-neutral-500 dark:text-neutral-300 overflow-hidden text-ellipsis" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
                                         {advantage.description}
                                     </p>
-                                    
                                 </div>
                             </div>
                         ))}
