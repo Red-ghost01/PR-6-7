@@ -2,7 +2,7 @@ import aboutimage from "../assets/images/image_2022_03_21T09_50_51_653Z.webp";
 
 const About = () => {
   return (
-    <div className="bg-[#0A0D13]">
+    <div className={`bg-[#0A0D13] md:bg-[url(${aboutimage})]`}>
       <div className=" text-white grid md:grid-cols-2 grid-cols-1 max-w-[1800px] m-auto pt-14 px-[70px]">
         <div>
           <h1 className="text-[42px] font-bold pb-[30px]">About Us</h1>
