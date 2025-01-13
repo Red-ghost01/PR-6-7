@@ -35,7 +35,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <ul className={`md:flex md:items-center md:space-x-4 ${isOpen ? "absolute w-full top-12 left-0 bg-[#0A0D13] md:static md:bg-transparent" : "hidden"} bg-[#0A0D13] md:bg-transparent`}>
+        <ul className={`md:flex md:items-center md:space-x-4  ${isOpen ? "absolute w-full top-12 left-0 bg-[#0A0D13] md:static md:bg-transparent" : "hidden"} bg-[#0A0D13] md:bg-transparent`}>
           {tabs.map((tab) => (
             <li key={tab.name}>
               <Link 
