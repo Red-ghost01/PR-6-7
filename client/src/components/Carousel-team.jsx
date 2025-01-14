@@ -5,7 +5,7 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import webImage from "../assets/images/business.jpg"; // Adjust the path as necessary
 
-const services = [
+const teams = [
     {
         id: 1,
         name: 'Web Development',
@@ -44,9 +44,9 @@ const services = [
     },
 ];
 
-function CarouselGames() {
+function CarouselTeams() {
     return (
-        <div className="relative flex h-full pt-10">
+        <div className="relative flex h-full pt-3">
             <div className="container max-w-screen-xl mx-auto relative z-9 overflow-x-hidden">
                 <Splide
                     options={{
@@ -59,30 +59,28 @@ function CarouselGames() {
                         },
                         arrows: false,
                         pagination: false,
-                        fixedWidth: '300px',
+                        fixedWidth: '400px',
                         gap: '50px',
                     }}
                     extensions={{ AutoScroll }}
                 >
-                    {services.map((service) => (
-                        <SplideSlide key={service.id} className="hover:shadow-xl hover:shadow-white block rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                            <Link to={'/more-services'}>
-                                <img className="rounded-t-lg" src={service.img} alt={service.name} style={{ width: '100%', height: 'auto' }} />
+                    {teams.map((team) => (
+                        <SplideSlide key={team.id} className="hover:shadow-xl hover:shadow-white block bg-white shadow-lg dark:bg-neutral-700">
+                            <Link to={''}>
+                                <img className="" src={team.img} alt={team.name} style={{ width: '100%', height: 'auto' }} />
                             </Link>
                             <div className="flex flex-col h-full p-4">
                                 <h5 className="mt-2 mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                                    {service.name}
+                                    {team.name}
                                 </h5>
                                 <p className="mb-4 text-base text-neutral-500 dark:text-neutral-300 overflow-hidden text-ellipsis" style={{
                                     display: '-webkit-box',
                                     WebkitLineClamp: 2,
                                     WebkitBoxOrient: 'vertical'
                                 }}>
-                                    {service.description}
+                                    {team.description}
                                 </p>
-                                <Link to={'/more-services'} className="inline-block rounded bg-blue-500 px-6 py-2 text-xs font-medium uppercase leading-normal text-white shadow transition duration-150 ease-in-out hover:bg-blue-600 focus:outline-none">
-                                    Discover More
-                                </Link>
+                                
                             </div>
                         </SplideSlide>
                     ))}
@@ -92,4 +90,4 @@ function CarouselGames() {
     );
 }
 
-export default CarouselGames;
+export default CarouselTeams;
