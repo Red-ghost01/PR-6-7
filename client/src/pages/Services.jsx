@@ -52,7 +52,7 @@ const Services = () => {
                 <div  >
                     <Carousel />
                 </div>
-                <div className="flex flex-col items-center justify-center pt-8">
+                <div className="flex flex-col items-center justify-center md:pt-8 pt-10">
                     <h2 className='text-5xl font-bold text-center text-white'>
                         Our Advantage
                     </h2>
@@ -62,7 +62,7 @@ const Services = () => {
                                 <a href="#">
                                     <img className="rounded-t-lg h-32 w-full object-cover" alt={advantage.name} />
                                 </a>
-                                <div className="flex flex-col items-center justify-center h-full p-4">
+                                <div className="flex flex-col items-center justify-center xl:p-4 md:p-2 p-1">
                                     <h5 className="mb-2  text-lg font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
                                         {advantage.name}
                                     </h5>
