@@ -1,0 +1,15 @@
+/* animations.css */
+@keyframes fadeInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Start from left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End in original position */
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeInFromLeft 0.5s ease forwards; /* Adjust duration and easing as needed */
+  }
