@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 w-full flex items-end justify-between bg-[#0A0D13] opacity-80 py-2 
+    <nav className="fixed top-0 z-10 w-full flex items-center justify-between bg-[#0A0D13] opacity-80 py-2 
      md:h-[89px] text-white">
       <div className="container flex items-center justify-between px-4 mx-auto">
         <a href="#" className="text-lg font-bold">CISC</a>
