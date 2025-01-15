@@ -46,11 +46,12 @@ const teams = [
 
 function CarouselTeams() {
     return (
-        <div className="relative flex h-full pt-3">
+        <div className="relative flex pt-3">
             <div className="container max-w-screen-xl mx-auto relative z-9 overflow-x-hidden">
                 <Splide
                     options={{
                         type: "loop",
+                        direction: 'rtl',
                         autoScroll: {
                             pauseOnHover: true,
                             pauseOnFocus: false,

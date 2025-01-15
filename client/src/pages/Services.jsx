@@ -38,6 +38,16 @@ const advantage = [
         name: 'Web Development',
         description: "We'll work with you to create a mobile app that's both functional and visually appealing.",
     },
+    {
+        id: 7,
+        name: 'Web Development',
+        description: "We'll work with you to create a mobile app that's both functional and visually appealing.",
+    },
+    {
+        id: 8,
+        name: 'Web Development',
+        description: "We'll work with you to create a mobile app that's both functional and visually appealing.",
+    },
 ];
 const Services = () => {
     return (

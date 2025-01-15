@@ -8,6 +8,7 @@ import Services from './pages/Services.jsx'
 import Projects from './pages/Projects.jsx'
 
 import Team from './pages/Team.jsx'
+import Trust from './pages/Trust.jsx'
 
 // import Footer from './pages/Footer.jsx'
 
@@ -18,10 +19,9 @@ function App() {
       <Home />
       <About />
       <Services />
-
       <Projects />
-
       <Team />
+      <Trust />
 
     </Fragment>
   )
