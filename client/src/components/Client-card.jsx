@@ -1,29 +1,26 @@
-import React from "react";
-import image from "../assets/images/467858946_1317848599119206_8893472275537528835_n.jpg"
-const Card = () => {
+const BadgeCard = ({ image, title, description }) => {
     return (
-      <div className="max-w-xs relative mx-auto bg-white rounded-lg z-10 shadow-md ">
+      <div className="max-w-full relative mx-auto bg-white rounded-lg shadow-md md:h-80 ">
         
-        {/* Avatar */}
-        <div className="absolute -top-1/4 z-30 flex items-center justify-center">
+        {/* Badge (Avatar) */}
+        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-30">
           <img
-            className="w-24 h-24 rounded-full border-4 border-white"
+            className="w-16 h-16 rounded-full border-2 border-white shadow-lg"
             src={image}
-            alt="Avatar"
+            alt="Avatar Badge"
           />
         </div>
-  
+        
         {/* Card Content */}
-        <div className="p-6">
-          <h2 className="text-lg font-semibold">Card Title</h2>
+        <div className="p-6 pt-16 text-center">
+          <h2 className="text-lg font-semibold">{title}</h2>
           <p className="text-gray-600 mt-2">
-            This is some example text within a card. You can add more details and
-            content here as needed.
+            {description}
           </p>
         </div>
       </div>
     );
   };
   
-
-export default Card;
+  
+  export default BadgeCard;
