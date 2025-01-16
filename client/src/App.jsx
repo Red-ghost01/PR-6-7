@@ -9,7 +9,7 @@ import Projects from './pages/Projects.jsx'
 
 import Team from './pages/Team.jsx'
 import Trust from './pages/Trust.jsx'
-
+import Faq from './pages/Faq.jsx'
 // import Footer from './pages/Footer.jsx'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Projects />
       <Team />
       <Trust />
-
+      <Faq />
     </Fragment>
   )
 }
